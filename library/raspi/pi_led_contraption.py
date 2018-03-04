@@ -70,7 +70,7 @@ class PiLedContraption:
     def dance_randomly(self):
         random.seed()
         for i in range(1,100):
-            r=random.randint(0,10)
+            r=random.randint(0,9)
             self._led[r].on()
             sleep(self._sleeptime)
 
