@@ -37,7 +37,7 @@ class PiLedContraption:
     def led_off(self, logical_led_number):
         ''' a function to turn OFF a led specifid by it's logical number in the sequence *not the gpio pin number
         '''
-        if(logical_led_number not in self.valid_leds):
+        if(logical_led_number not in self._valid_leds):
             print("No LED is configured on pin {0}".format(logical_led_number))
             #raise IndexError
         else:
