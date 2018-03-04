@@ -9,3 +9,8 @@ At this stage we have setup the basics of the flask UI components.  This include
 - Moved the static html into the templates directory
 - Create a file called flask_pi_led_controll_app.py with all the routes for the app.
 - Moved the stylesheet into /library/static/styles and changed all the html files to refer to it.
+
+### Final Step
+As the final step we'll add our class that represents our Raspberry Pi LED contraption and wire it up to the flask application.  
+
+To make things easier to test outside the Raspberry Pi, we simply copied our contraption class to create a mock interface and ripped out anything to do with GPIO processing.
