@@ -71,9 +71,12 @@ class PiLedContraption:
         random.seed()
         for i in range(1,100):
             r=random.randint(0,9)
+            print("{} on".format(i))
             self._led[r].on()
             sleep(self._sleeptime)
-
+            print("  off")
+            self._led[r].off()
+            sleep(self._sleeptime)
 
 if __name__ == "__main__":
     print("testing the pi led contraption")
