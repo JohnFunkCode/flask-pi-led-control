@@ -50,10 +50,10 @@ class PiLedContraption:
         for i in range(0,10):
             print("{} on".format(i))
             self._led[i].on()
-            sleep(self._sleeptimetime)
+            sleep(self._sleeptime)
             print("  off")
             self._led[i].off()
-            sleep(self._sleeptimetime)
+            sleep(self._sleeptime)
 
 
     def race_down(self):
@@ -62,17 +62,17 @@ class PiLedContraption:
         for i in range(9,-1,-1):
             print("{} on".format(i))
             self._led[i].on()
-            sleep(self._sleeptimetime)
+            sleep(self._sleeptime)
             print("  off")
             self._led[i].off()
-            sleep(self._sleeptimetime)
+            sleep(self._sleeptime)
 
     def dance_randomly(self):
         random.seed()
         for i in range(1,100):
             r=random.randint(0,10)
             self._led[r].on()
-            sleep(self._sleeptimetime)
+            sleep(self._sleeptime)
 
 
 if __name__ == "__main__":
