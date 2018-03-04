@@ -15,7 +15,7 @@ class PiLedContraption:
     def __init__(self):
         ''' initialize the class so everything is ready to use
         '''
-        _valid_leds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17]
+        self._valid_leds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17]
         # setup the LEDs
 
         for i in range(0, 10):
@@ -28,7 +28,7 @@ class PiLedContraption:
     def led_on(self, logical_led_number):
         ''' a function to turn ON a led specifid by it's logical number in the sequence *not the gpio pin number
         '''
-        if(logical_led_number not in self.valid_leds):
+        if(logical_led_number not in self._valid_leds):
             print("No LED is configured on pin {0}".format(logical_led_number))
             #raise IndexError
         else:
