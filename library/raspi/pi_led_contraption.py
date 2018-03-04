@@ -19,7 +19,7 @@ class PiLedContraption:
         # setup the LEDs
 
         for i in range(0, 10):
-            self._led.append(PMWLED(i + 2))
+            self._led.append(PWMLED(i + 2))
             self._led[i].off()
 
         self._sololed = PWMLED(17)
