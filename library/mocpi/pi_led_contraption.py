@@ -23,7 +23,7 @@ class PiLedContraption:
             print("No LED is configured on pin {0}".format(logical_led_number))
             #raise IndexError
         else:
-            print("on...{}".format(logical_led_number))
+            print("{}:on...".format(logical_led_number))
 
     def led_off(self, logical_led_number):
         ''' a function to turn OFF a led specifid by it's logical number in the sequence *not the gpio pin number
@@ -32,7 +32,7 @@ class PiLedContraption:
             print("No LED is configured on pin {0}".format(logical_led_number))
             #raise IndexError
         else:
-            print("..off {}".format(logical_led_number))
+            print("{}:..off".format(logical_led_number))
 
 
     def race_up(self):
@@ -58,9 +58,9 @@ class PiLedContraption:
         random.seed()
         for i in range(1,100):
             r=random.randint(0,9)
-            print("{} on".format(i))
+            print("{} on".format(r))
             sleep(self._sleeptime)
-            print("  off")
+            print("{}  off".format(r))
             sleep(self._sleeptime)
 
 if __name__ == "__main__":
