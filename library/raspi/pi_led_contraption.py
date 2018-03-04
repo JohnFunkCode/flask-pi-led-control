@@ -78,6 +78,7 @@ class PiLedContraption:
             self._led[r].on()
             sleep(self._sleeptime)
             print("{}  off".format(r))
+            self._led[r].off()
             sleep(self._sleeptime)
 
 if __name__ == "__main__":
