@@ -3,6 +3,7 @@
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
+  font-size: 3.5vw;
 }
 
 .wrapper > * {
@@ -29,6 +30,18 @@
 
 .aside-2 {
   background: hotpink;
+}
+
+.button{
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  font-size: 2vw;
 }
 
 @media all and (min-width: 600px) {
