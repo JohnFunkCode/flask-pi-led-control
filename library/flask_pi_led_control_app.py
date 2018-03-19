@@ -1,8 +1,8 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-#from library.mocpi import pi_led_contraption as pc
-from library.raspi import pi_led_contraption as pc
+from library.mocpi import pi_led_contraption as pc
+#from library.raspi import pi_led_contraption as pc
 
 app = Flask(__name__)
 aPC =pc.PiLedContraption()
